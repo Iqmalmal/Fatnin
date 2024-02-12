@@ -150,7 +150,7 @@
         display: flex; margin-top: 30vh; margin-left: 20vw;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 450px) {
         .nav-wrapper {
             background-color: #FCD12C;
             text-align: center;
@@ -271,7 +271,7 @@
         button.addEventListener("click", function () {
 
             var changeTop = (Math.random() * ((window.innerHeight - 500) - $("#no").height()));
-            var changeLeft = (Math.random() * (window.innerWidth - $("#no").width()));
+            var changeLeft = (Math.random() * ((window.innerWidth - 700) - $("#no").width()));
             $("#no").css("margin-top", changeTop + "px");
             $("#no").css("margin-left", changeLeft + "px");
         });
